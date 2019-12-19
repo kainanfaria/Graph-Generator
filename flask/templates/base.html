@@ -1,0 +1,28 @@
+<html>
+
+    <head> 
+        <title> Graph Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head%} {%endblock %}
+    </head>
+
+    <body>
+        {% block body%} {%endblock %}
+        <h1>Graph Generator</h1>
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <select id=GraphType>
+                    <option>Select Graph</option>
+                    <option>Conexo</option>
+                    <option>Triangular</option>
+                </select>
+            </div>
+        </form>
+
+        
+    </body>
+
+</html>

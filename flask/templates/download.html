@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Graph Generator</title>
+        <meta charset="UTF-8">
+	 <style type="text/css">
+
+            body {
+                text-align: center;
+                background-image: linear-gradient(to right, #43cea2 , #185a9d);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin-top: 10%;
+            }
+
+            div {
+                background-image: linear-gradient(to right, white , lightgray);
+                box-shadow: 5px 5px 10px;
+                border-radius: 10px;
+                margin: auto;	
+                width: 50%;
+                padding: 10px;
+                background-color: lightgrey; 
+            }
+
+
+                        
+        </style>
+                        
+        </head>
+    	<body>
+		<div>
+			<img src="{{msg}}.png" alt="some text" width=300 height=300>
+		</div>
+		<div>
+			Documento pronto para baixar:
+			<br>
+			<a href="{{msg}}.txt" download>Click here</a> para efetuar o download
+		</div>
+
+    </body>
+</html>

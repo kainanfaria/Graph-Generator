@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Graph Generator</title>
+        <style type="text/css">
+
+            body {
+                text-align: center;
+                background-image: linear-gradient(to right, #43cea2 , #185a9d);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin-top: 10%;
+            }
+            form {
+                display: inline-block;
+            }
+            div {
+                background-image: linear-gradient(to right, white , lightgray);
+                box-shadow: 5px 5px 10px;
+                border-radius: 10px;
+                margin: auto;	
+                width: 50%;
+                padding: 10px;
+                background-color: lightgrey; 
+            }
+	    .button {
+		  background-image: linear-gradient(to right,  #43cea2, #185a9d);
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+	    }
+	    input:not([type="checkbox"]){
+		  width: 95%;
+		  margin-top: 4px;
+		  padding: 10px;    
+		  border: 1px solid #b2b2b2;
+		 
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		 
+		  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+		 
+		  -webkit-transition: all 0.2s linear;
+		  transition: all 0.2s linear;
+		}
+                        
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1 style="color:cornflowerblue; font-family: fantasy; text-shadow: 1px 1px #1acca0;"> Graph Generator </h1>
+        <p style="font-family: Arial, Helvetica, sans-serif;"> for connected graphs type it in Type of graph, connected <br>
+            for triangular graphs type it in Type of graph, triangular<br>
+            the min edges number are equal of vertex number 
+
+        </p>
+        <form action="download.html" method='POST'>
+            <input type="text" name="graphType" size="auto" maxlength="auto" placeholder="Select Type of Graph" required="required">
+            <br> 
+            <input type="number" name="graphVertex" min="1" placeholder="Quantity of vertex" required="required">
+            <br>
+            <input type="number" name="graphEdge" min="1" placeholder="Quantity of edges" required="required">
+            <br>
+            <input type="text" name="graphName" placeholder="Graph name" required="required"><br>
+            <input class="button" type="submit" value="Create Graph">
+          </form>
+        </div>
+    </body>
+</html>
